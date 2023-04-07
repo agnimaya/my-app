@@ -26,8 +26,8 @@ node{
    }
    stage('Nexus Image Push'){
    sh "docker login -u admin -p admin123 65.2.126.236:8083"
-   sh "docker tag agnimaya/myweb:0.0.2 65.2.126.236:8083/nexus:1.0.0"
-   sh 'docker push 65.2.126.236:8083/nexus:1.0.0'
+   sh "docker tag agnimaya/myweb:0.0.2 65.2.126.236:8083/nexuus:1.0.0"
+   sh 'docker push 65.2.126.236:8083/nexuus:1.0.0'
    }
    stage('Remove Previous Container'){
 	try{
